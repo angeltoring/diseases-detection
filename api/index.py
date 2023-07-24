@@ -3,7 +3,7 @@ import time
 from flask import Flask, send_file, request, jsonify
 import subprocess
 import shutil
-from yolomodel import main.model_main
+from yolomodel.main import model_main
 
 app = Flask(__name__)
 
@@ -32,7 +32,7 @@ def process_image():
         file_path = os.path.join(image_folder,'req-image.jpg')
         file.save(file_path)
 
-        main.model_main()
+        model_main()
 
         # Return a success response
         return jsonify({'success': 'Image processed successfully'}), 200
