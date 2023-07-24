@@ -1,10 +1,11 @@
 import subprocess
-import cv2
 import os
 import shutil
 from .send_notification import notification_main
+from dotenv import load_dotenv
 
 def model_main():
+    load_dotenv()
 
     folder_path = 'test-model'
 
@@ -59,5 +60,5 @@ def model_main():
         print("Detection failed")
         return "success"
         
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()

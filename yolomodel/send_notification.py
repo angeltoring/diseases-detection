@@ -9,10 +9,12 @@ import time
 import glob
 import datetime
 import json
+from dotenv import load_dotenv
+
 
 # Set this when user have signed up
-USER_ID = 1
-PLANT_ID = 1
+USER_ID = int(os.getenv('USER_ID'))
+PLANT_ID = int(os.getenv('PLANT_ID'))
 DISEASES_DICT = {
     '0': "Tip Burn",
     '1': "Brown Spots",
