@@ -3,6 +3,7 @@ Flask==2.2.2
 # Usage: pip install -r requirements.txt
 
 # Base ------------------------------------------------------------------------
+python-dotenv
 gunicorn
 gitpython>=3.1.30
 matplotlib>=3.3
