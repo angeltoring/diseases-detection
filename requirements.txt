@@ -1,10 +1,11 @@
-Flask==2.2.2
+Flask==2.3.2
 # YOLOv5 requirements
 # Usage: pip install -r requirements.txt
 
 # Base ------------------------------------------------------------------------
 python-dotenv
-gunicorn
+gunicorn==19.10.0
+werkzeug>=2.2.3 # not directly required, pinned by Snyk to avoid a vulnerability
 gitpython>=3.1.30
 matplotlib>=3.3
 numpy>=1.18.5
