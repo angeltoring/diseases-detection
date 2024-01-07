@@ -6,7 +6,7 @@ Flask==2.3.2
 python-dotenv
 gunicorn==19.10.0
 werkzeug>=2.2.3 # not directly required, pinned by Snyk to avoid a vulnerability
-ultralytics>=8.0.111
+ultralytics
 gitpython>=3.1.30
 matplotlib>=3.3
 numpy>=1.18.5
