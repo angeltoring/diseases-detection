@@ -1,7 +1,7 @@
 import subprocess
 import os
 import shutil
-from .send_notification import notification_main
+from send_notification import notification_main
 from dotenv import load_dotenv
 
 def model_main():
@@ -24,7 +24,7 @@ def model_main():
 
     
 
-    folder_path = '/yolomodel/yolov5/runs/detect'
+    folder_path = '/yolov5/runs/detect'
     cp = os.getcwd()
     # fp = os.path.join(cp , folder_path)
     fp = cp+folder_path
@@ -44,8 +44,8 @@ def model_main():
     # ]
 
     command = [
-        'python', 'yolomodel/yolov5/detect.py',
-        '--weights', 'yolomodel/yolov5/best.pt',
+        'python', 'yolov5/detect.py',
+        '--weights', 'yolov5/best.pt',
         '--conf', '0.1',
         '--max-det', '1',
         '--source', f'{os.getcwd()}'+'/captured/req-image.jpg',
