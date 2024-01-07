@@ -13,8 +13,8 @@ from dotenv import load_dotenv
 
 
 # Set this when user have signed up
-USER_ID = int(os.getenv('USER_ID'))
-PLANT_ID = int(os.getenv('PLANT_ID'))
+USER_ID = int(os.getenv('USER_ID') or 1)
+PLANT_ID = int(os.getenv('PLANT_ID') or 1)
 DISEASES_DICT = {
     '0': "Tip Burn",
     '1': "Brown Spots",

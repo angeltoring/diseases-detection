@@ -3,7 +3,8 @@ import time
 from flask import Flask, send_file, request, jsonify
 import subprocess
 import shutil
-from yolomodel.main import model_main
+# from yolomodel.main import model_main
+from .yolomodel.main import model_main
 
 app = Flask(__name__)
 
