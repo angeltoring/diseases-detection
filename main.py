@@ -3,9 +3,9 @@ import os
 import shutil
 from send_notification import notification_main
 from dotenv import load_dotenv
-# import subprocess
-# subprocess.run(["pip", "uninstall", "-y", "ultralytics"], check=True)
-# subprocess.run(["pip", "install", "ultralytics"], check=True)
+import subprocess
+subprocess.run(["pip", "uninstall", "-y", "ultralytics"], check=True)
+subprocess.run(["pip", "install", "--force", "ultralytics"], check=True)
 
 def model_main():
     load_dotenv()
