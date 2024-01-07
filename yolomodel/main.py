@@ -24,8 +24,9 @@ def model_main():
 
     
 
-    folder_path = '/yolomodel/yolov5/runs/detect'
+    folder_path = '/yolov5/runs/detect'
     cp = os.getcwd()
+    print(cp)
     # fp = os.path.join(cp , folder_path)
     fp = cp+folder_path
     if os.path.exists(fp):
@@ -44,11 +45,11 @@ def model_main():
     # ]
 
     command = [
-        'python', 'yolomodel/yolov5/detect.py',
-        '--weights', 'yolomodel/yolov5/best.pt',
+        'python', 'yolov5/detect.py',
+        '--weights', 'yolov5/best.pt',
         '--conf', '0.1',
         '--max-det', '1',
-        '--source', f'{os.getcwd()}'+'/captured/req-image.jpg',
+        '--source', os.path.join(os.getcwd(), '..', 'captured', 'req-image.jpg'),
     ]
 
     result = subprocess.run(command, check=True)
@@ -61,4 +62,4 @@ def model_main():
         return "success"
         
 if __name__ == "__main__":
-    main()
+    model_main()
