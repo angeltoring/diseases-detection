@@ -1,14 +1,11 @@
 import subprocess
 import os
 import shutil
-from send_notification import notification_main
-from dotenv import load_dotenv
-import subprocess
-# subprocess.run(["pip", "uninstall", "-y", "ultralytics"], check=True)
-subprocess.run(["pip", "install", "--force", "ultralytics"], check=True)
+from .send_notification import notification_main
+# from dotenv import load_dotenv
 
 def model_main():
-    load_dotenv()
+    # load_dotenv()
 
     folder_path = 'test-model'
 
