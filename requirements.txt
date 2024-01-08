@@ -49,3 +49,4 @@ setuptools>=65.5.1 # Snyk vulnerability fix
 
 ultralytics==8.0.100
 flask
+Gunicorn
