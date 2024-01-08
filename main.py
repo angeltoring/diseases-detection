@@ -1,7 +1,7 @@
 import subprocess
 import os
 import shutil
-from .send_notification import notification_main
+from send_notification import notification_main
 # from dotenv import load_dotenv
 
 def model_main():

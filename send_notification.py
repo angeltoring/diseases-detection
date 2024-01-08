@@ -9,7 +9,7 @@ import time
 import glob
 import datetime
 import json
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
 
 # Set this when user have signed up
